@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressVPN Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">ExpressVPN</a>
+                <ul class="nav-links">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Get secure and private access to the internet</h1>
+            <p>Try ExpressVPN risk-free with a 30-day money-back guarantee</p>
+            <button class="cta-button" onclick="openModal('getExpressVPNModal')">Get ExpressVPN</button>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why choose ExpressVPN?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="icon-1.png" alt="Feature 1">
+                    <h3>High speed, ultra secure, and easy to use.</h3>
+                    <p>Instant setup. Easy-to-use VPN service. No logs kept, no tracking.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon-2.png" alt="Feature 2">
+                    <h3>Unblock the sites and services you love.</h3>
+                    <p>Stream, listen, watch, and play on any device, from anywhere.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon-3.png" alt="Feature 3">
+                    <h3>Privacy you can trust.</h3>
+                    <p>Browse with confidence and keep your data private and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download section -->
+    <section class="download">
+        <div class="container">
+            <h2>Get started with ExpressVPN today</h2>
+            <p>Available on all devices. Download, install, and connect now!</p>
+            <button class="download-button" onclick="openModal('downloadModal')">Download ExpressVPN</button>
+        </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Choose your plan</h2>
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h3>1 Month</h3>
+                    <p>$12.95 / month</p>
+                    <button onclick="selectPlan('1 Month')">Select Plan</button>
+                </div>
+                <div class="plan">
+                    <h3>6 Months</h3>
+                    <p>$59.95 billed every 6 months</p>
+                    <button onclick="selectPlan('6 Months')">Select Plan</button>
+                </div>
+                <div class="plan">
+                    <h3>12 Months</h3>
+                    <p>$99.95 billed annually</p>
+                    <button onclick="selectPlan('12 Months')">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ExpressVPN Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for functionality placeholders -->
+    <div id="getExpressVPNModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('getExpressVPNModal')">&times;</span>
+            <h2>Get ExpressVPN</h2>
+            <form onsubmit="handleGetExpressVPN()">
+                <input type="email" placeholder="Enter your email">
+                <input type="submit" value="Get ExpressVPN">
+            </form>
+        </div>
+    </div>
+
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('downloadModal')">&times;</span>
+            <h2>Download ExpressVPN</h2>
+            <p>Select your platform:</p>
+            <ul>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
